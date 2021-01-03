@@ -1,3 +1,3 @@
 <?php
-echo "MY APPLİCATİON";
+echo "omer hamsiii";
 ?>
