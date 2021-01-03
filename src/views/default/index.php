@@ -1,3 +1,3 @@
 <?php
-echo "omer hfassadamsiii1111";
+echo "omer";
 ?>
