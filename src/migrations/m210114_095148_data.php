@@ -3,20 +3,22 @@
 use yii\db\Migration;
 use yii\db\Schema;
 /**
- * Class m210112_163253_urunler
+ * Class m210114_095148_data
  */
-class m210112_163253_urunler extends Migration
+class m210114_095148_data extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        return $this->createTable("urunler",[
-            "id"=>Schema::TYPE_PK,
-            "isim"=>Schema::TYPE_STRING,
-            "fiyat"=>Schema::TYPE_DOUBLE
-
+        $this->insert('urunler',[
+            'isim'=>'apple 11PRO',
+            'fiyat'=>4.851
+        ]);
+        $this->insert('urunler',[
+            'isim'=>'apple 5s',
+            'fiyat'=>4.956
         ]);
     }
 
@@ -25,7 +27,9 @@ class m210112_163253_urunler extends Migration
      */
     public function safeDown()
     {
-        return $this->dropTable('urunler');
+        echo "m210114_095148_data cannot be reverted.\n";
+
+        return false;
     }
 
     /*
@@ -37,7 +41,7 @@ class m210112_163253_urunler extends Migration
 
     public function down()
     {
-        echo "m210112_163253_urunler cannot be reverted.\n";
+        echo "m210114_095148_data cannot be reverted.\n";
 
         return false;
     }

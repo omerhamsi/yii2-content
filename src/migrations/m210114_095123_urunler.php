@@ -3,19 +3,20 @@
 use yii\db\Migration;
 use yii\db\Schema;
 /**
- * Class m210112_172745_yorumlar
+ * Class m210114_095123_urunler
  */
-class m210112_172745_yorumlar extends Migration
+class m210114_095123_urunler extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        return $this->createTable('yorumlar',[
-            'id'=>Schema::TYPE_PK,
-            'yorumid'=>Schema::TYPE_INTEGER,
-            'yorumlar'=>Schema::TYPE_TEXT,
+        return $this->createTable("urunler",[
+            "id"=>Schema::TYPE_PK,
+            "isim"=>Schema::TYPE_STRING,
+            "fiyat"=>Schema::TYPE_DOUBLE
+
         ]);
     }
 
@@ -24,9 +25,7 @@ class m210112_172745_yorumlar extends Migration
      */
     public function safeDown()
     {
-        echo "m210112_172745_yorumlar cannot be reverted.\n";
-
-        return false;
+        return $this->dropTable('urunler');
     }
 
     /*
@@ -38,7 +37,7 @@ class m210112_172745_yorumlar extends Migration
 
     public function down()
     {
-        echo "m210112_172745_yorumlar cannot be reverted.\n";
+        echo "m210114_095123_urunler cannot be reverted.\n";
 
         return false;
     }
