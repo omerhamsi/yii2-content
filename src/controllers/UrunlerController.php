@@ -143,6 +143,16 @@ class UrunlerController extends Controller
 
         return $this->redirect(['index']);
     }
+    public function actionDelete2($id)
+    {
+        $model=$this->findModel($id);
+        foreach ($model->yorumlars as $yorum){
+            $yorum->delete();
+        }
+        $this->findModel($id)->delete();
+
+        return $this->redirect(['index']);
+    }
 
     /**
      * Finds the Urunler model based on its primary key value.
@@ -151,6 +161,7 @@ class UrunlerController extends Controller
      * @return Urunler the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
+
     protected function findModel($id)
     {
         if (($model = Urunler::findOne($id)) !== null) {
