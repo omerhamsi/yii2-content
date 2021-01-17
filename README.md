@@ -1,4 +1,5 @@
 # yii2-content
+ÖMER HAMSİ-180202111
 Bir modül oluştururken herhangi bir app altında bir modules klasörü
 oluşturup mödülümüzün adı olan bir klasör açıp onun altına da bir Module.php dosyamızın olması gerekir.Bu klasör altında controller,view,model,migrationlarımız oluşturabilir.Module.php dosyası bir base Module sınıfınfan türemiş olmalı ve basit şekilde bir init metodunu çalıştırmalı.Appe modülü tanıtmak için config dosyası 
 altında main ya da localde modules arrayi içine mödülünüzü tanıtabiliriz.
