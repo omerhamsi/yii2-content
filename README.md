@@ -1,6 +1,6 @@
 # yii2-content
 ÖMER HAMSİ-180202111
-PAKETİ KENDİ PROJENİZE composer require omerhamsi/yii2content "dev-main" komutuyla kurabilirsiniz.
+PAKETİ KENDİ PROJENİZE ssh ile makineye bağlanıp advanced içine gelerek composer require omerhamsi/yii2content "dev-main" komutuyla kurabilirsiniz.
 Migrationları kurarken php yii migrate --migrationPath=vendor/omerhamsi/yii2content/src/migrations şeklindeki komut ile tabloları oluşturabilirsiniz.
 http://advanced/backend/web/index.php?r=content/urunler ile projeyi çalıştırabilirsiniz.
 Bir modül oluştururken herhangi bir app altında bir modules klasörü
